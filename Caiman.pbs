@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#PBS -A UQ-SCI-SBMS
+
+#PBS -l select=1:ncpus=6:mem=110GB:vmem=110GB
+
+#PBS -l walltime=6:00:00
+
+#PBS -j oe
+
+#Now do some things
+
+python ~/CaImAn/CaImAn_Euramoo_singleThread_flow_2.py ${DATA}
